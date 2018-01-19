@@ -25073,7 +25073,7 @@
 				if (isLoading) {
 					return React.createElement(
 						"h3",
-						null,
+						{ clasName: "text-center" },
 						"Fetching weather..."
 					);
 				} else if (temp && location) {
@@ -25085,9 +25085,9 @@
 				"div",
 				null,
 				React.createElement(
-					"h3",
-					null,
-					"weather component"
+					"h1",
+					{ className: "text-center" },
+					"Get Weather"
 				),
 				React.createElement(WeatherForm, { onSearch: this.handleSearch }),
 				renderMessage()
@@ -25128,7 +25128,7 @@
 					React.createElement("input", { type: "text", ref: "location", placeholeder: "Enter City Name" }),
 					React.createElement(
 						"button",
-						null,
+						{ className: "button expanded" },
 						"Get Weather"
 					)
 				)
@@ -25151,16 +25151,12 @@
 		    location = _ref.location;
 
 		return React.createElement(
-			"div",
-			null,
-			React.createElement(
-				"h3",
-				null,
-				"It is ",
-				temp,
-				" in ",
-				location
-			)
+			"h3",
+			{ className: "text-center" },
+			"It is ",
+			temp,
+			" in ",
+			location
 		);
 	};
 
