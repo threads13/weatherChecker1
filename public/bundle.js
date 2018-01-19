@@ -26752,14 +26752,14 @@
 			"div",
 			null,
 			React.createElement(
-				"h3",
-				null,
+				"h1",
+				{ className: "text-center" },
 				"About"
 			),
 			React.createElement(
 				"p",
 				null,
-				"Welcome to the About page"
+				"This is a small weather application built on React."
 			)
 		);
 	};
