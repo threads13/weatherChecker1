@@ -26638,9 +26638,18 @@
 	// with arrow function
 	var About = function About(props) {
 		return React.createElement(
-			"h3",
+			"div",
 			null,
-			"About Components"
+			React.createElement(
+				"h3",
+				null,
+				"About"
+			),
+			React.createElement(
+				"p",
+				null,
+				"Welcome to the About page"
+			)
 		);
 	};
 
@@ -26656,9 +26665,18 @@
 
 	var Examples = function Examples() {
 		return React.createElement(
-			"h3",
+			"div",
 			null,
-			"Examples"
+			React.createElement(
+				"h3",
+				null,
+				"Examples"
+			),
+			React.createElement(
+				"p",
+				null,
+				"Welcome to the Examples page"
+			)
 		);
 	};
 
